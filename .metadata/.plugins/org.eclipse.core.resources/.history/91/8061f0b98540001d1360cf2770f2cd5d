@@ -1,0 +1,36 @@
+package iVoteSimulator;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+
+public class Student {
+	
+	private UUID student;
+	private ArrayList<String> answers = new ArrayList<String>();
+	
+	public Student() {
+		setStudentID(UUID.randomUUID());
+	}
+	
+	public UUID getStudent() {
+		return student;
+	}
+
+	public void setStudentID(UUID uuid) {
+		this.student = uuid;
+	}
+
+	public List<String> getAnswers() {
+		return answers;
+	}
+	
+	public void addAnswers(String answers) {
+		this.answers.add(answers);
+	}
+	
+	public void printAnswers() {
+		System.out.print(getAnswers());
+	}
+}

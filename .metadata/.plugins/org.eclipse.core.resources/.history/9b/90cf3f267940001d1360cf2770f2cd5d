@@ -1,0 +1,13 @@
+package iVoteSimulator;
+
+public interface Question {
+	
+	public String getQuestion();
+	
+	public String getAnswer();
+	
+	public boolean isSingleQuestion();
+
+	boolean isSingleQuestion();
+	
+}

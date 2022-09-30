@@ -1,0 +1,33 @@
+package iVoteSimulator;
+
+public class SingleQuestion implements Question {
+	
+	private String singleQuest;
+	private String[] singleAnswer;
+	
+	public SingleQuestion (String singleQuest, String[] singleAnswer) {
+		
+		this.singleAnswer = singleAnswer;
+		this.singleQuest = singleQuest;
+	}
+
+	@Override
+	public String getQuestion() {
+		
+		return singleQuest;
+	}
+
+	@Override
+	public String getAnswer() {
+		// TODO Auto-generated method stub
+		return singleAnswer;
+	}
+
+	@Override
+	public boolean isSingleQuestion() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+
+}

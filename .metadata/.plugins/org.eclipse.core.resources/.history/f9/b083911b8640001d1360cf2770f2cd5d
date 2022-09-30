@@ -1,0 +1,12 @@
+package iVoteSimulator;
+
+public class Student {
+	
+	private String studID;
+	private String answer;
+	
+	public Student() {
+		this.studID = "default";
+		this.answer = "default"
+	}
+}

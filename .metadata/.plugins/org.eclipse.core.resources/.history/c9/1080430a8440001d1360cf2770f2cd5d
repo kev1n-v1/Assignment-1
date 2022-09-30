@@ -1,0 +1,13 @@
+package iVoteSimulator;
+
+import java.util.ArrayList;
+
+public interface Question {
+	
+	public String getQuestion();
+	
+	public ArrayList<String> getAnswer();
+	
+	public boolean isSingleQuestion();
+	
+}

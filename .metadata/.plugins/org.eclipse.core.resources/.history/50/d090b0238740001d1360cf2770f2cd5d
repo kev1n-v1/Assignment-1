@@ -1,0 +1,31 @@
+package iVoteSimulator;
+
+public class MultiQuestion implements Question {
+
+	private String multQuestion;
+	private String multAnswer;
+	
+	public MultiQuestion(String multQuestion, String multAnswer) {
+		this.multQuestion = multQuestion;
+		this.multAnswer = multAnswer;
+	}
+
+	public void getQuestion(String question) {
+		// TODO Auto-generated method stub
+		this.multQuestion = question;
+		
+	}
+
+	@Override
+	public void getAnswer(String answer) {
+		// TODO Auto-generated method stub
+		this.multAnswer = answer;
+	}
+	
+	@Override
+	public boolean isSingleQuestion() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
